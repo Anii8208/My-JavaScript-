@@ -25,6 +25,8 @@ let  isLoggedIn = false
 //Non-Primitive Datatypes
 
         object
+        Array
+        Function
 
  */
 
