@@ -1,4 +1,4 @@
-const Name = "Aniruddh"
+const Name = "Aniruddh";
 //String Declartion
 const RepoId = 50;
 
