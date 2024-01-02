@@ -67,13 +67,13 @@ MyArr = MyArr2.join()
 
 let Ar1 = [0, 1, 2, 3, 4, 5]
 
-console.log(Ar1); //[ 0, 1, 2, 3, 4, 5 ]
+//console.log(Ar1); //[ 0, 1, 2, 3, 4, 5 ]
 
 let NewAr1 = Ar1.slice(1, 3) 
 
-console.log("A", Ar1); //A [ 0, 1, 2, 3, 4, 5 ]
+//console.log("A", Ar1); //A [ 0, 1, 2, 3, 4, 5 ]
 
-console.log(NewAr1);  //[ 1, 2 ]
+//console.log(NewAr1);  //[ 1, 2 ]
 
 //************************************************************************ */
 
@@ -81,8 +81,66 @@ console.log(NewAr1);  //[ 1, 2 ]
 
 let NewAr2 = Ar1.splice(1, 3)
 
-console.log("B", Ar1); //B [ 0, 4, 5 ]
+//console.log("B", Ar1); //B [ 0, 4, 5 ]
 
-console.log(NewAr2);//[ 1, 2, 3 ]
+//console.log(NewAr2);//[ 1, 2, 3 ]
+
+//********************************************************************************** */
+
+let MarvelHeros = ["SpidarMan", "IronMan", "Thor"]
+
+let DCHeros = ["Flash", "BatMan", "SuperMan"]
+
+//MarvelHeros.push(DCHeros)
+
+//console.log(MarvelHeros);//[ 'SpidarMan', 'IronMan', 'Thor', [ 'Flash', 'BatMan', 'SuperMan' ] ]
+
+//console.log(MarvelHeros [3] [0]); //Flash
+
+//******************************************* */
+
+//const AllHeros = MarvelHeros.concat(DCHeros)
+
+//console.log(AllHeros); //[ 'SpidarMan', 'IronMan', 'Thor', 'Flash', 'BatMan', 'SuperMan' ]
+
+//******************************************* */
+
+//Spread Operator(...) = Glass Drop
+
+let AllNewHeros = [...MarvelHeros, ...DCHeros, ...Ar1] //Advantage 1 or more array can include
+
+//console.log(AllNewHeros); //[ 'SpidarMan', 'IronMan', 'Thor', 'Flash', 'BatMan', 'SuperMan' ]
+
+//******************************************** */
+
+let NumArray = [0, 1, 2, [3, 4, 5], [6, 7, 8], 9, [10, 11, [12, 13, 15] ] ]
+
+//let NewNumArry = NumArray.flat(Infinity) 
+/*[
+   0,  1,  2, 3,  4,  5,
+   6,  7,  8, 9, 10, 11,
+  12, 13, 15]
+*/
+
+let NewNumArry = NumArray.flat(1) //[ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, [ 12, 13, 15 ] ]
+
+//console.log(NewNumArry);
+
+//************************************************* */
 
 
+console.log(Array.isArray("Aniruddha")); //Check given input Is Array or not
+
+//************************************************* */
+
+console.log(Array.from("Aniruddha")); //Convert input in Array
+
+console.log(Array.from({ name: "Anii"})); //[] it need to specify key in object
+
+//************************************************* */
+
+let score1 = 100
+let score2 = 200
+let score3 = 300
+
+console.log(Array.of(score1, score2, score3, "anii")); //[ 100, 200, 300, 'anii' ]
