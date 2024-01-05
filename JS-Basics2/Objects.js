@@ -186,3 +186,41 @@ const Users = [
 //console.log(SnapUser.hasOwnProperty('Id')); //true
 
 //console.log(SnapUser.hasOwnProperty('PrentName')); //false
+
+//*********************************************************************** */
+
+//Object Distructring : To release the headack of '.' operator
+
+const course = {
+    courseName: "Chai aur codee",
+    courseInstructor: "Hitesh",
+    courseFee: 999
+}
+
+//const {} = course
+
+const {courseName} = course
+
+//console.log(courseName);
+
+const {courseInstructor: Instructor} = course
+//console.log(Instructor);
+
+//********************************************************************************* */
+ 
+//API = Application Programming Interface
+//Its Nothing but the Witing the value Properly who come from Backend
+//In history Backend Value come in from XML Structure but Now the value come in "JSON"
+
+//JSON(JAVASCRIPT Object Notation) = nothing But the like Object
+
+/*{
+    "Name": "Anii",
+    "course": "chai or code"
+}*/
+
+/*[
+    {},
+    {},
+    {}
+]*/
