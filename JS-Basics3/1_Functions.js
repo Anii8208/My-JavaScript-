@@ -117,4 +117,52 @@ const result = AddTowNums(1,4)
         return `${username} just logged In`
 }
 
-console.log(UserLoggedIn()); //Anii just logged In
+//console.log(UserLoggedIn()); //Anii just logged In
+
+//************************************************************************** */
+
+//When N number of Arguments are Come Function parameter At that time we use "REST" Operator ""..."" Same as the Spread Operator Depends on use 
+
+//REST "..." Operator Take individual value from Argu And make the Array of all Argu
+
+function calculateCartPrice(...price)
+{
+    return price 
+}
+
+//console.log(calculateCartPrice(100,455,5656,465456,565))
+
+//*********************************************************************************** */
+
+//Passing Objects as a arguments
+const user = {
+    name: "anii",
+    ege: 18
+}
+
+function handlingObject(anyobject) //in this method TypeSafety must be check val of obj pre
+{
+    console.log(`Name of User is ${anyobject.name} and Ege of user is ${anyobject.ege}`);
+}
+
+//handlingObject(user)
+
+//another Type to pass object
+ 
+  /*handlingObject({
+    name: "Aniruddha",
+    ege: 22
+  })*/
+
+//********************************************************************************** */
+
+//PAssing Array as Argument in Fun Parameter
+
+const MyArray = [10, 20, 30, 40, 50]
+
+function returnSecEle(getArray)
+{
+        return `Second Ele is ${getArray[1]}`
+}
+
+console.log(returnSecEle(MyArray))
