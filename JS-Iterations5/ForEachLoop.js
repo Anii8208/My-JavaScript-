@@ -1,4 +1,4 @@
-//For Each Loop = It is Use for Array
+//For Each Loop = It is Use for Array IT IS ALSO Called High ORDER Loop
 
 const Myarr = ["JS", "CPP", "JAva", "HTML"]
 
